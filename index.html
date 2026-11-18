@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Luz y Color Peluqueros · Peluquería en Torrejón de la Calzada</title>
+<meta name="description" content="Luz y Color Peluqueros, Calle Real 54, Torrejón de la Calzada. Corte, color, mechas, peinados y uñas. 4,6★ en Google. Pide cita: 918 16 98 01.">
+<meta name="theme-color" content="#2b1d2a">
+<meta property="og:title" content="Luz y Color Peluqueros · Torrejón de la Calzada">
+<meta property="og:description" content="Más de 25 años cuidando tu pelo en Torrejón de la Calzada. 4,6★ con más de 300 opiniones en Google.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Luz y Color Peluqueros",
+  "telephone": "+34918169801",
+  "address": {"@type": "PostalAddress","streetAddress": "Calle Real, 54","postalCode": "28991","addressLocality": "Torrejón de la Calzada","addressRegion": "Madrid","addressCountry": "ES"},
+  "geo": {"@type": "GeoCoordinates","latitude": 40.1985268,"longitude": -3.8008879},
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification","dayOfWeek": ["Tuesday","Wednesday"],"opens": "09:30","closes": "19:00"},
+    {"@type": "OpeningHoursSpecification","dayOfWeek": ["Thursday","Friday"],"opens": "09:30","closes": "20:00"},
+    {"@type": "OpeningHoursSpecification","dayOfWeek": "Saturday","opens": "09:30","closes": "14:00"}
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --vino:#2b1d2a;
+    --ciruela:#5a3352;
+    --rosa:#e9b8a8;
+    --rosa-2:#f6dfd6;
+    --oro:#c89b5c;
+    --crema:#fbf6f1;
+    --tinta:#2a2228;
+    --gris:#6f6369;
+    --radio:24px;
+    --sombra:0 14px 34px rgba(43,29,42,.12);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"DM Sans",system-ui,-apple-system,sans-serif;color:var(--tinta);background:var(--crema);line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:84px}
+  h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.01em}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  .wrap{width:min(1100px,100% - 40px);margin-inline:auto}
+  section{padding:64px 0}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ciruela)}
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--oro)}
+  .sec-title{font-size:clamp(2.1rem,8vw,3.2rem);margin:10px 0 12px;color:var(--vino)}
+  .sec-title em{color:var(--oro);font-style:italic}
+  .sec-sub{color:var(--gris);max-width:560px}
+
+  /* Cabecera */
+  header{position:sticky;top:0;z-index:50;background:rgba(251,246,241,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(43,29,42,.07)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{font-family:"Cormorant Garamond",serif;font-size:1.55rem;font-weight:700;color:var(--vino);line-height:1}
+  .logo span{color:var(--oro);font-style:italic}
+  .logo small{display:block;font-family:"DM Sans",sans-serif;font-size:.6rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gris);font-weight:500;margin-top:3px}
+  .status-pill{display:inline-flex;align-items:center;gap:7px;font-size:.76rem;font-weight:700;padding:7px 12px;border-radius:999px;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06);white-space:nowrap}
+  .dot{width:9px;height:9px;border-radius:50%;background:#bbb}
+  .open .dot{background:#22c55e;animation:pulse 1.8s infinite}
+  .closed .dot{background:#ef4444}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(34,197,94,.55)}70%{box-shadow:0 0 0 9px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}
+  .desk-links{display:none;gap:26px;font-weight:500;font-size:.95rem}
+
+  /* Hero */
+  .hero{position:relative;overflow:hidden;padding:26px 0 50px}
+  .hero::before{content:"";position:absolute;width:520px;height:520px;right:-200px;top:-160px;border-radius:50%;background:radial-gradient(circle,var(--rosa-2),transparent 70%)}
+  .hero-grid{position:relative;display:grid;gap:26px;align-items:center}
+  .hero-photo{position:relative;border-radius:200px 200px 28px 28px;overflow:hidden;aspect-ratio:4/5;box-shadow:var(--sombra);background:var(--rosa-2)}
+  .hero-photo img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform 1.6s cubic-bezier(.2,.8,.2,1)}
+  .hero-photo.in img{transform:scale(1)}
+  .hero-photo .tag{position:absolute;left:14px;bottom:14px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-radius:16px;padding:10px 14px;font-weight:700;font-size:.85rem;display:flex;gap:10px;align-items:center}
+  .hero-photo .tag b{font-family:"Cormorant Garamond",serif;font-size:1.6rem;color:var(--ciruela);line-height:1}
+  .stars{color:var(--oro);letter-spacing:1px}
+  .hero h1{font-size:clamp(2.8rem,13vw,5rem);color:var(--vino)}
+  .hero h1 em{display:block;color:var(--oro);font-style:italic}
+  .lead{font-size:1.05rem;color:var(--gris);max-width:500px;margin-top:14px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:700;font-size:1rem;border-radius:999px;padding:15px 24px;transition:transform .15s, background .2s;border:0;cursor:pointer;font-family:inherit}
+  .btn:active{transform:scale(.97)}
+  .btn-primary{background:var(--vino);color:#fff;box-shadow:0 10px 24px rgba(43,29,42,.25)}
+  .btn-primary:hover{background:var(--ciruela)}
+  .btn-ghost{background:#fff;color:var(--vino);box-shadow:0 6px 18px rgba(43,29,42,.08)}
+  .btn svg{width:19px;height:19px}
+
+  /* Cinta de servicios */
+  .marquee{background:var(--vino);color:var(--rosa-2);overflow:hidden;white-space:nowrap;padding:14px 0}
+  .marquee .track{display:inline-flex;gap:34px;animation:scroll 26s linear infinite;font-family:"Cormorant Garamond",serif;font-size:1.35rem;font-style:italic}
+  .marquee .track span::after{content:"✦";margin-left:34px;color:var(--oro);font-style:normal;font-size:.9rem}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+
+  /* Historia */
+  .story{display:grid;gap:22px;align-items:center}
+  .story-img{position:relative;border-radius:var(--radio);overflow:hidden;aspect-ratio:1;box-shadow:var(--sombra);background:var(--rosa-2)}
+  .story-img img{width:100%;height:100%;object-fit:cover}
+  .years{position:absolute;right:12px;top:12px;width:96px;height:96px;border-radius:50%;background:var(--oro);color:#fff;display:grid;place-items:center;text-align:center;line-height:1;font-weight:700;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 8px 20px rgba(0,0,0,.18);transform:rotate(-8deg)}
+  .years b{display:block;font-family:"Cormorant Garamond",serif;font-size:2.2rem;letter-spacing:0}
+  .story p{color:var(--gris);margin-top:10px}
+
+  /* Asistente "¿qué te apetece?" */
+  .quiz{background:#fff;border-radius:30px;box-shadow:var(--sombra);padding:24px;margin-top:24px}
+  .opts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+  .opt{border:1.5px solid #eadfd8;background:var(--crema);border-radius:18px;padding:14px 12px;text-align:left;font:inherit;font-weight:700;cursor:pointer;transition:.2s;display:flex;flex-direction:column;gap:4px}
+  .opt span{font-size:1.5rem}
+  .opt small{font-weight:400;color:var(--gris);font-size:.8rem}
+  .opt.on{border-color:var(--ciruela);background:var(--rosa-2);transform:translateY(-2px)}
+  .answer{margin-top:16px;border-radius:20px;padding:18px;background:linear-gradient(135deg,var(--vino),var(--ciruela));color:#fff;display:none}
+  .answer.show{display:block;animation:pop .35s ease}
+  @keyframes pop{from{opacity:0;transform:translateY(8px)}}
+  .answer h3{font-size:1.7rem;color:var(--rosa)}
+  .answer p{opacity:.9;margin:6px 0 14px}
+  .answer .btn{background:#fff;color:var(--vino);padding:12px 20px;font-size:.95rem}
+
+  /* Servicios */
+  .services{display:grid;gap:12px;margin-top:24px}
+  .svc{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:20px;padding:18px;box-shadow:0 4px 16px rgba(43,29,42,.06)}
+  .svc .n{flex:none;font-family:"Cormorant Garamond",serif;font-size:1.9rem;color:var(--oro);line-height:1;width:34px}
+  .svc h3{font-family:"DM Sans",sans-serif;font-size:1.02rem;font-weight:700}
+  .svc p{color:var(--gris);font-size:.92rem}
+
+  /* Galería */
+  .filters{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}
+  .chip{border:1.5px solid #e4d7cf;background:#fff;font:inherit;font-weight:700;font-size:.88rem;padding:8px 16px;border-radius:999px;cursor:pointer;transition:.2s}
+  .chip.on{background:var(--vino);color:#fff;border-color:var(--vino)}
+  .gallery{margin-top:18px;columns:2;column-gap:10px}
+  .g-item{all:unset;display:block;cursor:zoom-in;margin-bottom:10px;border-radius:18px;overflow:hidden;break-inside:avoid;background:var(--rosa-2);box-shadow:0 6px 16px rgba(43,29,42,.10);transition:opacity .3s, transform .3s}
+  .g-item img{width:100%;height:auto;transition:transform .5s}
+  .g-item:hover img{transform:scale(1.04)}
+  .g-item.hide{display:none}
+  .lightbox{position:fixed;inset:0;z-index:100;background:rgba(25,16,24,.95);display:none;align-items:center;justify-content:center}
+  .lightbox.on{display:flex;animation:fade .25s}
+  @keyframes fade{from{opacity:0}}
+  .lightbox img{max-width:94vw;max-height:80vh;border-radius:16px}
+  .lb-close{position:absolute;top:calc(14px + env(safe-area-inset-top));right:14px;width:44px;height:44px;border-radius:50%;border:0;background:#fff;font-weight:900;cursor:pointer}
+  .lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;border:0;background:rgba(255,255,255,.9);font-size:1.8rem;cursor:pointer}
+  .lb-prev{left:10px}.lb-next{right:10px}
+  .lb-count{position:absolute;bottom:calc(22px + env(safe-area-inset-bottom));color:#fff;font-weight:700;opacity:.8}
+
+  /* Opiniones */
+  .score{display:flex;align-items:center;gap:16px;margin-top:8px}
+  .score b{font-family:"Cormorant Garamond",serif;font-size:3.6rem;color:var(--vino);line-height:1}
+  .score small{display:block;color:var(--gris);font-size:.82rem}
+  .bars{margin-top:16px;display:grid;gap:6px;max-width:420px}
+  .bar{display:grid;grid-template-columns:22px 1fr 32px;align-items:center;gap:8px;font-size:.8rem;font-weight:700;color:var(--gris)}
+  .bar i{display:block;height:7px;border-radius:7px;background:#efe5de;overflow:hidden}
+  .bar i::after{content:"";display:block;height:100%;width:var(--w);background:var(--oro);transform-origin:left;transform:scaleX(0);transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+  .bars.in .bar i::after{transform:scaleX(1)}
+  .slider{margin-top:22px;display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 20px 16px;margin-inline:-20px;scrollbar-width:none}
+  .slider::-webkit-scrollbar{display:none}
+  .review{flex:0 0 86%;scroll-snap-align:center;background:#fff;border-radius:var(--radio);padding:22px;box-shadow:0 4px 18px rgba(43,29,42,.08);display:flex;flex-direction:column;gap:12px}
+  .review p{font-family:"Cormorant Garamond",serif;font-size:1.3rem;line-height:1.3;color:var(--vino)}
+  .review .who{margin-top:auto;font-size:.85rem}
+  .review .who b{display:block}
+  .review .who small{color:var(--gris)}
+  .dots{display:flex;justify-content:center;gap:7px}
+  .dots button{width:8px;height:8px;border-radius:8px;border:0;background:#dccfc6;cursor:pointer;transition:.3s;padding:0}
+  .dots button.on{width:24px;background:var(--vino)}
+
+  /* Visítanos */
+  .visit{display:grid;gap:18px;margin-top:24px}
+  .card{background:#fff;border-radius:var(--radio);padding:22px;box-shadow:0 4px 18px rgba(43,29,42,.07)}
+  .hours li{list-style:none;display:flex;justify-content:space-between;align-items:center;padding:11px 12px;border-radius:12px;font-weight:500}
+  .hours li:nth-child(odd){background:#faf4ef}
+  .hours li.today{background:var(--vino);color:#fff;font-weight:700}
+  .hoy{font-style:normal;font-size:.66rem;font-weight:700;letter-spacing:.1em;background:var(--oro);color:#fff;padding:2px 7px;border-radius:999px;margin-left:6px;vertical-align:2px}
+  .map{border-radius:var(--radio);overflow:hidden;box-shadow:var(--sombra);aspect-ratio:4/3;background:var(--rosa-2)}
+  .map iframe{width:100%;height:100%;border:0}
+
+  details{background:#fff;border-radius:18px;padding:4px 18px;box-shadow:0 3px 14px rgba(43,29,42,.06);margin-top:10px}
+  summary{cursor:pointer;list-style:none;font-weight:700;padding:14px 0;display:flex;justify-content:space-between;gap:10px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--oro);transition:.3s}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{padding:0 0 16px;color:var(--gris)}
+
+  .final{position:relative;overflow:hidden;border-radius:30px;padding:36px 24px;text-align:center;color:#fff;background:var(--vino)}
+  .final::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 0%,rgba(233,184,168,.35),transparent 55%),radial-gradient(circle at 100% 100%,rgba(200,155,92,.35),transparent 55%)}
+  .final *{position:relative}
+  .final h2{font-size:clamp(2rem,8vw,2.8rem)}
+  .final .btn{background:#fff;color:var(--vino);margin-top:16px}
+  footer{padding:34px 0 20px;color:var(--gris);font-size:.85rem;text-align:center}
+
+  .dock{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;display:grid;grid-template-columns:1fr 1fr;gap:10px;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:8px;border-radius:999px;box-shadow:0 12px 34px rgba(0,0,0,.16);transform:translateY(140%);transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+  .dock.show{transform:none}
+  .dock .btn{padding:13px 10px;font-size:.95rem}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+  @media (min-width:860px){
+    body{padding-bottom:0}
+    .desk-links{display:flex}
+    .hero-grid{grid-template-columns:1.1fr .9fr}
+    .story{grid-template-columns:.9fr 1.1fr;gap:50px}
+    .services{grid-template-columns:1fr 1fr}
+    .gallery{columns:4}
+    .visit{grid-template-columns:1fr 1.2fr}
+    .review{flex-basis:calc(33.333% - 10px)}
+    .opts{grid-template-columns:repeat(3,1fr)}
+    .dock{display:none}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#inicio" class="logo">Luz <span>y</span> Color<small>Peluqueros</small></a>
+    <nav class="desk-links" aria-label="Secciones">
+      <a href="#servicios">Servicios</a><a href="#trabajos">Trabajos</a><a href="#opiniones">Opiniones</a><a href="#visitanos">Horario</a>
+    </nav>
+    <span id="status" class="status-pill" aria-live="polite"><span class="dot"></span><span class="txt">Horario</span></span>
+  </div>
+</header>
+
+<main id="inicio">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Peluquería en Torrejón de la Calzada</span>
+      <h1>Tu pelo,<em>tu mejor versión.</em></h1>
+      <p class="lead">Corte, color, mechas y peinados con el asesoramiento de un equipo que lleva más de 25 años cuidando el pelo de Torrejón.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+34918169801">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          Pedir cita
+        </a>
+        <a class="btn btn-ghost" href="#trabajos">Ver trabajos</a>
+      </div>
+    </div>
+    <!-- Foto de la ficha de Google Maps. Sustituir por una foto propia del salón cuando la tengan. -->
+    <div class="hero-photo reveal" id="heroPhoto">
+      <img referrerpolicy="no-referrer" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q0mzKbKgSjYR6gJZa-aGEJeC0dYcm4Yy9Vgpj1vKZ2fJ0b8nTqOocIMPfi_ryxITaL9WogPlvhPrUQIDtKL-S-vWo6U-JRpdMflnhT4byfNGYQBwCSS82gwpHWoGjj4g11-9e3VipVlJBN=w800-h1000-n-k-no" alt="Melena rubia con ondas hecha en Luz y Color Peluqueros">
+      <a class="tag" href="#opiniones"><b>4,6</b><span><span class="stars">★★★★★</span><br>318 opiniones en Google</span></a>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Corte</span><span>Color</span><span>Mechas</span><span>Peinados de novia</span><span>Tratamientos</span><span>Manicura</span>
+    <span>Corte</span><span>Color</span><span>Mechas</span><span>Peinados de novia</span><span>Tratamientos</span><span>Manicura</span>
+  </div>
+</div>
+
+<!-- HISTORIA -->
+<section>
+  <div class="wrap story">
+    <div class="story-img reveal">
+      <img referrerpolicy="no-referrer" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RR54ZsfrGV_LPuTJ15-CWYY0zczktbE0MWogZuuGAlOwK2mGbNYFbGL9eV10jTDq8Sgim1Ij8pClixv9vHzsRKhMwsJVIGW28h2YIjqZz4ehTkc4AzfTh_jQOp8Zk9rBoJcyxz0g=w800-h800-n-k-no" alt="Rizos con mechas en Luz y Color Peluqueros" onerror="this.remove()">
+      <!-- CONFIRMAR años de experiencia con el salón (una clienta cuenta que la peinaron para su boda hace 25 años). -->
+      <div class="years"><span><b>+25</b>años</span></div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Nuestra historia</span>
+      <h2 class="sec-title">Clientas que vuelven <em>desde hace décadas</em></h2>
+      <p>Hay clientas que se peinaron aquí para su boda hace 25 años y siguen viniendo hoy. Ese es nuestro mayor orgullo: un trato cercano, paciencia para escucharte y un asesoramiento sincero, aunque a veces te recomendemos un cambio que no esperabas.</p>
+      <p>Y si nos llamas con poca antelación, haremos lo posible por buscarte un hueco.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ASISTENTE -->
+<section style="background:var(--rosa-2)">
+  <div class="wrap">
+    <span class="eyebrow reveal">Te ayudamos a elegir</span>
+    <h2 class="sec-title reveal">¿Qué te apetece <em>hoy</em>?</h2>
+    <div class="quiz reveal">
+      <div class="opts" id="opts">
+        <button class="opt" data-k="cambio"><span>✂️</span>Un cambio de look<small>Corte nuevo</small></button>
+        <button class="opt" data-k="color"><span>🎨</span>Color o mechas<small>Iluminar, cubrir canas…</small></button>
+        <button class="opt" data-k="cuidado"><span>💧</span>Cuidar mi pelo<small>Tratamientos</small></button>
+        <button class="opt" data-k="evento"><span>💍</span>Un evento especial<small>Boda, comunión…</small></button>
+        <button class="opt" data-k="unas"><span>💅</span>Mis uñas<small>Manicura</small></button>
+        <button class="opt" data-k="duda"><span>🤔</span>No lo sé<small>Asesórame</small></button>
+      </div>
+      <div class="answer" id="answer" aria-live="polite">
+        <h3 id="aTitle"></h3>
+        <p id="aText"></p>
+        <a class="btn" href="tel:+34918169801">📞 Llamar y reservar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<!-- CONFIRMAR CON EL SALÓN: lista deducida de sus reseñas en Google. Añadir precios si quieren. -->
+<section id="servicios">
+  <div class="wrap">
+    <span class="eyebrow reveal">Servicios</span>
+    <h2 class="sec-title reveal">Lo que hacemos <em>con mimo</em></h2>
+    <div class="services">
+      <div class="svc reveal"><span class="n">01</span><div><h3>Corte y peinado</h3><p>Te asesoramos según tu tipo de pelo y tu estilo para que salgas con un corte que te favorezca.</p></div></div>
+      <div class="svc reveal"><span class="n">02</span><div><h3>Color y mechas</h3><p>Tintes, mechas y reflejos para iluminar tu cara o cubrir canas con un acabado natural.</p></div></div>
+      <div class="svc reveal"><span class="n">03</span><div><h3>Peinados para eventos</h3><p>Bodas, comuniones y celebraciones. Te peinamos para que estés perfecta en tu día.</p></div></div>
+      <div class="svc reveal"><span class="n">04</span><div><h3>Tratamientos capilares</h3><p>Hidratación y cuidado para devolver brillo y fuerza a tu pelo.</p></div></div>
+      <div class="svc reveal"><span class="n">05</span><div><h3>Manicura</h3><p>Uñas cuidadas y decoradas a tu gusto, del tono más discreto al diseño más atrevido.</p></div></div>
+      <div class="svc reveal"><span class="n">06</span><div><h3>Asesoramiento de imagen</h3><p>¿No sabes qué hacerte? Te escuchamos y te proponemos lo que mejor va contigo.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<!-- Fotos publicadas en la ficha de Google Maps del salón. Confirmar que son suyas o sustituir por fotos propias antes de publicar. -->
+<section id="trabajos" style="padding-top:20px">
+  <div class="wrap">
+    <span class="eyebrow reveal">Trabajos reales</span>
+    <h2 class="sec-title reveal">Salidas <em>de nuestro salón</em></h2>
+    <div class="filters reveal" id="filters">
+      <button class="chip on" data-f="todo">Todo</button>
+      <button class="chip" data-f="pelo">Pelo</button>
+      <button class="chip" data-f="unas">Uñas</button>
+    </div>
+    <div class="gallery reveal" id="gallery">
+      <button class="g-item" data-cat="pelo" data-full="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q0mzKbKgSjYR6gJZa-aGEJeC0dYcm4Yy9Vgpj1vKZ2fJ0b8nTqOocIMPfi_ryxITaL9WogPlvhPrUQIDtKL-S-vWo6U-JRpdMflnhT4byfNGYQBwCSS82gwpHWoGjj4g11-9e3VipVlJBN=w1400-k-no"><img referrerpolicy="no-referrer" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q0mzKbKgSjYR6gJZa-aGEJeC0dYcm4Yy9Vgpj1vKZ2fJ0b8nTqOocIMPfi_ryxITaL9WogPlvhPrUQIDtKL-S-vWo6U-JRpdMflnhT4byfNGYQBwCSS82gwpHWoGjj4g11-9e3VipVlJBN=w500-k-no" alt="Ondas rubias" onerror="this.closest('.g-item').remove()"></button>
+      <button class="g-item" data-cat="unas" data-full="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QLKoBBuNGP73fGiu9bWoRpWiEYKGiaz2fAd8yrXsLTW9hqVQoUoruI_sdHbWykLTi750vixKCjyOoidlhArfOvZVsihxPii7n7sp2MYispvFXbsUqmBFYvBUhaF6lUy7EPdotxJqTty941=w1400-k-no"><img referrerpolicy="no-referrer" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QLKoBBuNGP73fGiu9bWoRpWiEYKGiaz2fAd8yrXsLTW9hqVQoUoruI_sdHbWykLTi750vixKCjyOoidlhArfOvZVsihxPii7n7sp2MYispvFXbsUqmBFYvBUhaF6lUy7EPdotxJqTty941=w500-k-no" alt="Uñas decoradas en lila" onerror="this.closest('.g-item').remove()"></button>
+      <button class="g-item" data-cat="pelo" data-full="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T_cuzBteV-x1v7bzVHjkDxdfr849cM5NhB2xfkQp3SYym1OhGsIZcn0j6X_dxizaG4wx6XsMEImRwqhrkEord5wtOkWHfq2AyNGzWbkhaDtEIg9EZ4DboLG1T_xuaRgt9qjkFN8w=w1400-k-no"><img referrerpolicy="no-referrer" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T_cuzBteV-x1v7bzVHjkDxdfr849cM5NhB2xfkQp3SYym1OhGsIZcn0j6X_dxizaG4wx6XsMEImRwqhrkEord5wtOkWHfq2AyNGzWbkhaDtEIg9EZ4DboLG1T_xuaRgt9qjkFN8w=w500-k-no" alt="Semirecogido para evento" onerror="this.closest('.g-item').remove()"></button>
+      <button class="g-item" data-cat="pelo" data-full="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RR54ZsfrGV_LPuTJ15-CWYY0zczktbE0MWogZuuGAlOwK2mGbNYFbGL9eV10jTDq8Sgim1Ij8pClixv9vHzsRKhMwsJVIGW28h2YIjqZz4ehTkc4AzfTh_jQOp8Zk9rBoJcyxz0g=w1400-k-no"><img referrerpolicy="no-referrer" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RR54ZsfrGV_LPuTJ15-CWYY0zczktbE0MWogZuuGAlOwK2mGbNYFbGL9eV10jTDq8Sgim1Ij8pClixv9vHzsRKhMwsJVIGW28h2YIjqZz4ehTkc4AzfTh_jQOp8Zk9rBoJcyxz0g=w500-k-no" alt="Rizos con mechas" onerror="this.closest('.g-item').remove()"></button>
+      <button class="g-item" data-cat="unas" data-full="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TsZXGDH-FigHD6fkyR0kwj_8v_clYjbHq4Tn_eSIMFWul2r9MOGa52bzKDznVOXEKmUfXIiFLeZWng086VU9tJ5d0tTOZeLOnUfhIb9hsohtmtM8ORSfCYxZbe79RLfVZ3I3H84A=w1400-k-no"><img referrerpolicy="no-referrer" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TsZXGDH-FigHD6fkyR0kwj_8v_clYjbHq4Tn_eSIMFWul2r9MOGa52bzKDznVOXEKmUfXIiFLeZWng086VU9tJ5d0tTOZeLOnUfhIb9hsohtmtM8ORSfCYxZbe79RLfVZ3I3H84A=w500-k-no" alt="Manicura francesa con detalle" onerror="this.closest('.g-item').remove()"></button>
+      <button class="g-item" data-cat="pelo" data-full="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qwb2LXFqnA-u-ycCiHWJLKA_Xv-CLC9-D32lCiTJa4CW3v8TpfyHZyJN2CsUMgYpsrG8ZUA1zB-WU68DBgy9vM5TOuATQf_0Utnnb1--nJq3OnOV1jYDcuPexclqjP1uasqJFGeSQQDwNq=w1400-k-no"><img referrerpolicy="no-referrer" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qwb2LXFqnA-u-ycCiHWJLKA_Xv-CLC9-D32lCiTJa4CW3v8TpfyHZyJN2CsUMgYpsrG8ZUA1zB-WU68DBgy9vM5TOuATQf_0Utnnb1--nJq3OnOV1jYDcuPexclqjP1uasqJFGeSQQDwNq=w500-k-no" alt="Mechas balayage" onerror="this.closest('.g-item').remove()"></button>
+      <button class="g-item" data-cat="pelo" data-full="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TZAU5F6h9FD3HOKhBkmL5hktnMMf0B9DoCl7P1dpCNCuvwtFieaS6AuSqfPbQ1avRsqPjvBh3z8DIJPdD_P3MHITe-G0XEhDvk_j04JwmMy3FVnXS-GljsRM6u2CHEVpTCTmkkuw=w1400-k-no"><img referrerpolicy="no-referrer" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TZAU5F6h9FD3HOKhBkmL5hktnMMf0B9DoCl7P1dpCNCuvwtFieaS6AuSqfPbQ1avRsqPjvBh3z8DIJPdD_P3MHITe-G0XEhDvk_j04JwmMy3FVnXS-GljsRM6u2CHEVpTCTmkkuw=w500-k-no" alt="Corte corto con textura" onerror="this.closest('.g-item').remove()"></button>
+      <button class="g-item" data-cat="unas" data-full="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TCrGru-1r0nC23p2MzmkfJRqadoPY9bU5tNWpS1hiGEwKpFaRtbsurxBy55l8fGAzf6sb6yeYUKGIlmFZNw0q2CIZXbaNE6HhgPGQEyFBlDqJaZSEAuv8ge2mzhQy2_ioQSvbO=w1400-k-no"><img referrerpolicy="no-referrer" loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TCrGru-1r0nC23p2MzmkfJRqadoPY9bU5tNWpS1hiGEwKpFaRtbsurxBy55l8fGAzf6sb6yeYUKGIlmFZNw0q2CIZXbaNE6HhgPGQEyFBlDqJaZSEAuv8ge2mzhQy2_ioQSvbO=w500-k-no" alt="Uñas rojas" onerror="this.closest('.g-item').remove()"></button>
+    </div>
+    <p class="sec-sub reveal" style="margin-top:6px;font-size:.88rem">Toca una foto para verla en grande.</p>
+  </div>
+</section>
+
+<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <button class="lb-close" id="lbClose" aria-label="Cerrar">✕</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Anterior">‹</button>
+  <img id="lbImg" referrerpolicy="no-referrer" alt="Foto ampliada">
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Siguiente">›</button>
+  <span class="lb-count" id="lbCount"></span>
+</div>
+
+<!-- OPINIONES -->
+<!-- Extractos de opiniones reales de Google. Pedir el visto bueno del salón antes de publicar. -->
+<section id="opiniones">
+  <div class="wrap">
+    <span class="eyebrow reveal">Opiniones</span>
+    <h2 class="sec-title reveal">Lo que dicen <em>nuestras clientas</em></h2>
+    <div class="score reveal"><b>4,6</b><div><span class="stars">★★★★★</span><small>318 opiniones en Google</small></div></div>
+    <div class="bars reveal" id="bars">
+      <div class="bar">5★<i style="--w:84%"></i>266</div>
+      <div class="bar">4★<i style="--w:6%"></i>20</div>
+      <div class="bar">3★<i style="--w:1%"></i>2</div>
+      <div class="bar">2★<i style="--w:2%"></i>5</div>
+      <div class="bar">1★<i style="--w:8%"></i>25</div>
+    </div>
+    <div class="slider" id="slider">
+      <article class="review"><span class="stars">★★★★★</span><p>“Me peinó para mi boda hace 25 años y a día de hoy sigo fiel. Siempre me atienden con un trato inmejorable y una paciencia única.”</p><div class="who"><b>Laura M.</b><small>Reseña en Google</small></div></article>
+      <article class="review"><span class="stars">★★★★★</span><p>“Una experiencia maravillosa de principio a fin. Grandes profesionales, encantadoras, atentas y muy cuidadosas con cada detalle.”</p><div class="who"><b>Marisol</b><small>Reseña en Google</small></div></article>
+      <article class="review"><span class="stars">★★★★★</span><p>“Siempre llamo con poco tiempo de antelación y consigo que me hagan un hueco. Buen ambiente y buenas profesionales que te asesoran.”</p><div class="who"><b>Ruth A.</b><small>Reseña en Google</small></div></article>
+      <article class="review"><span class="stars">★★★★★</span><p>“Muy contenta con el trato y el resultado. Son majísimas, te hacen sentir muy a gusto y trabajan genial. ¡Volveré sin duda!”</p><div class="who"><b>Tania B.</b><small>Reseña en Google</small></div></article>
+      <article class="review"><span class="stars">★★★★★</span><p>“Llevo muchos años confiando en esta peluquería y mi experiencia siempre ha sido excelente. Profesionalidad, buen trato y resultados impecables.”</p><div class="who"><b>Yolanda M.</b><small>Reseña en Google</small></div></article>
+    </div>
+    <div class="dots" id="dots"></div>
+  </div>
+</section>
+
+<!-- VISÍTANOS -->
+<section id="visitanos" style="padding-top:20px">
+  <div class="wrap">
+    <span class="eyebrow reveal">Visítanos</span>
+    <h2 class="sec-title reveal">En la <em>Calle Real, 54</em></h2>
+    <div class="visit">
+      <div class="card reveal">
+        <p><b>Calle Real, 54</b><br><span style="color:var(--gris)">28991 Torrejón de la Calzada, Madrid</span></p>
+        <ul class="hours" id="hours" style="margin-top:16px"></ul>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:+34918169801">Llamar · 918 16 98 01</a>
+          <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Luz%20y%20Color%20Peluqueros%2C%20Calle%20Real%2054%2C%20Torrej%C3%B3n%20de%20la%20Calzada">Cómo llegar</a>
+        </div>
+      </div>
+      <div class="map reveal">
+        <iframe title="Mapa de Luz y Color Peluqueros" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Luz%20y%20Color%20Peluqueros%2C%20Calle%20Real%2054%2C%2028991%20Torrej%C3%B3n%20de%20la%20Calzada&z=16&output=embed"></iframe>
+      </div>
+    </div>
+
+    <!-- CONFIRMAR respuestas con el salón -->
+    <div style="margin-top:34px">
+      <span class="eyebrow reveal">Preguntas frecuentes</span>
+      <details class="reveal"><summary>¿Tengo que pedir cita?</summary><p>Te recomendamos llamar al 918 16 98 01. Aunque sea con poca antelación, intentaremos buscarte un hueco.</p></details>
+      <details class="reveal"><summary>¿Hacéis peinados de novia y para eventos?</summary><p>Sí. Llámanos con tiempo para reservar el día y, si quieres, hacemos una prueba antes.</p></details>
+      <details class="reveal"><summary>¿Qué días abrís?</summary><p>De martes a sábado. Los lunes y domingos cerramos. Mira el horario completo arriba.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:10px">
+  <div class="wrap">
+    <div class="final reveal">
+      <h2>¿Te damos un poco de luz?</h2>
+      <p>Llámanos y reserva tu cita.</p>
+      <a class="btn" href="tel:+34918169801">📞 918 16 98 01</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="logo" style="font-size:1.3rem">Luz <span>y</span> Color</span><br>
+    Calle Real, 54 · 28991 Torrejón de la Calzada (Madrid) · <a href="tel:+34918169801">918 16 98 01</a><br>
+    <span style="font-size:.78rem">© <span id="yr"></span> Luz y Color Peluqueros</span>
+  </div>
+</footer>
+
+<div class="dock" id="dock">
+  <a class="btn btn-primary" href="tel:+34918169801">📞 Pedir cita</a>
+  <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Luz%20y%20Color%20Peluqueros%2C%20Calle%20Real%2054%2C%20Torrej%C3%B3n%20de%20la%20Calzada">📍 Cómo llegar</a>
+</div>
+
+<script>
+(function(){
+  /* Horario (hora de Madrid). 0=domingo ... 6=sábado; minutos desde 00:00 */
+  var H={0:[],1:[],2:[[570,1140]],3:[[570,1140]],4:[[570,1200]],5:[[570,1200]],6:[[570,840]]};
+  var NAMES=["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
+  function fmt(m){var h=Math.floor(m/60),mi=m%60;return h+":"+(mi<10?"0":"")+mi}
+  function madridNow(){
+    try{var p=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Madrid",weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date());
+      var o={};p.forEach(function(x){o[x.type]=x.value});
+      return {d:{Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[o.weekday],m:(parseInt(o.hour,10)%24)*60+parseInt(o.minute,10)};
+    }catch(e){var n=new Date();return {d:n.getDay(),m:n.getHours()*60+n.getMinutes()}}
+  }
+  function status(){
+    var n=madridNow(),t=H[n.d];
+    for(var i=0;i<t.length;i++){if(n.m>=t[i][0]&&n.m<t[i][1])return {open:true,txt:"Abierto · cierra a las "+fmt(t[i][1])}}
+    for(var j=0;j<t.length;j++){if(n.m<t[j][0])return {open:false,txt:"Cerrado · abre a las "+fmt(t[j][0])}}
+    for(var k=1;k<=7;k++){var d=(n.d+k)%7;if(H[d].length)return {open:false,txt:"Cerrado · abre "+(k===1?"mañana":"el "+NAMES[d].toLowerCase())+" a las "+fmt(H[d][0][0])}}
+    return {open:false,txt:"Cerrado"};
+  }
+  var st=document.getElementById("status");
+  function paint(){
+    var s=status();st.className="status-pill "+(s.open?"open":"closed");
+    st.querySelector(".txt").textContent=s.open?"Abierto ahora":"Cerrado ahora";st.title=s.txt;
+    var today=madridNow().d,html="";
+    [1,2,3,4,5,6,0].forEach(function(d){
+      var t=H[d].length?H[d].map(function(r){return fmt(r[0])+"–"+fmt(r[1])}).join("<br>"):"Cerrado";
+      html+='<li'+(d===today?' class="today"':'')+'><span>'+NAMES[d]+(d===today?' <em class="hoy">HOY</em>':'')+'</span><span>'+t+'</span></li>';
+    });
+    document.getElementById("hours").innerHTML=html+'<li style="background:transparent;justify-content:center;color:var(--gris);font-size:.88rem">'+s.txt+'</li>';
+  }
+  paint();setInterval(paint,60000);
+
+  /* Aparición al hacer scroll */
+  var io=("IntersectionObserver" in window)?new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}});
+  },{threshold:.15}):null;
+  document.querySelectorAll(".reveal").forEach(function(el){io?io.observe(el):el.classList.add("in")});
+
+  /* Asistente */
+  var A={
+    cambio:["Corte y peinado","Cuéntanos qué buscas y te proponemos un corte que vaya con tu cara y tu tipo de pelo. Nuestras clientas dicen que acertamos incluso cuando recomendamos algo que no esperaban."],
+    color:["Color y mechas","Iluminamos tu cara o cubrimos canas con un acabado natural. Te asesoramos sobre el tono que más te favorece."],
+    cuidado:["Tratamiento capilar","Recupera brillo y suavidad con un tratamiento adaptado a tu pelo. Te diremos qué necesita en la primera visita."],
+    evento:["Peinado para tu evento","Bodas, comuniones y celebraciones. Reserva con tiempo y, si quieres, hacemos una prueba antes del gran día."],
+    unas:["Manicura","Desde un tono discreto hasta diseños con detalle. Pregúntanos por las opciones al reservar."],
+    duda:["Asesoramiento personalizado","Ven sin ideas cerradas: te escuchamos, miramos tu pelo y te proponemos lo que mejor va contigo."]
+  };
+  document.querySelectorAll(".opt").forEach(function(b){
+    b.addEventListener("click",function(){
+      document.querySelectorAll(".opt").forEach(function(x){x.classList.remove("on")});b.classList.add("on");
+      var a=A[b.dataset.k],box=document.getElementById("answer");
+      document.getElementById("aTitle").textContent=a[0];document.getElementById("aText").textContent=a[1];
+      box.classList.remove("show");void box.offsetWidth;box.classList.add("show");
+      box.scrollIntoView({behavior:"smooth",block:"nearest"});
+    });
+  });
+
+  /* Galería: filtros + visor */
+  document.querySelectorAll("#filters .chip").forEach(function(c){
+    c.addEventListener("click",function(){
+      document.querySelectorAll("#filters .chip").forEach(function(x){x.classList.remove("on")});c.classList.add("on");
+      document.querySelectorAll(".g-item").forEach(function(it){it.classList.toggle("hide",c.dataset.f!=="todo"&&it.dataset.cat!==c.dataset.f)});
+    });
+  });
+  var lb=document.getElementById("lb"),lbImg=document.getElementById("lbImg"),cur=0,list=[];
+  function vis(){return [].slice.call(document.querySelectorAll(".g-item:not(.hide)"))}
+  function show(i){list=vis();cur=(i+list.length)%list.length;lbImg.src=list[cur].dataset.full;document.getElementById("lbCount").textContent=(cur+1)+" / "+list.length}
+  function closeLb(){lb.classList.remove("on");document.body.style.overflow=""}
+  document.getElementById("gallery").addEventListener("click",function(e){
+    var it=e.target.closest(".g-item");if(!it)return;show(vis().indexOf(it));lb.classList.add("on");document.body.style.overflow="hidden";
+  });
+  document.getElementById("lbClose").onclick=closeLb;
+  document.getElementById("lbPrev").onclick=function(e){e.stopPropagation();show(cur-1)};
+  document.getElementById("lbNext").onclick=function(e){e.stopPropagation();show(cur+1)};
+  lb.addEventListener("click",function(e){if(e.target===lb)closeLb()});
+  document.addEventListener("keydown",function(e){if(!lb.classList.contains("on"))return;if(e.key==="Escape")closeLb();if(e.key==="ArrowRight")show(cur+1);if(e.key==="ArrowLeft")show(cur-1)});
+  var tx=null;lb.addEventListener("touchstart",function(e){tx=e.touches[0].clientX},{passive:true});
+  lb.addEventListener("touchend",function(e){if(tx===null)return;var dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50)show(cur+(dx<0?1:-1));tx=null},{passive:true});
+
+  /* Carrusel de opiniones */
+  var slider=document.getElementById("slider"),dots=document.getElementById("dots"),cards=slider.querySelectorAll(".review");
+  function go(i){slider.scrollTo({left:cards[i].offsetLeft-slider.offsetLeft-20,behavior:"smooth"})}
+  cards.forEach(function(c,i){var d=document.createElement("button");d.setAttribute("aria-label","Opinión "+(i+1));d.onclick=function(){go(i)};dots.appendChild(d)});
+  function active(){var c=slider.scrollLeft+slider.clientWidth/2,b=0,bd=1e9;cards.forEach(function(x,i){var d=Math.abs(x.offsetLeft-slider.offsetLeft+x.clientWidth/2-c);if(d<bd){bd=d;b=i}});dots.querySelectorAll("button").forEach(function(x,i){x.classList.toggle("on",i===b)});return b}
+  slider.addEventListener("scroll",function(){requestAnimationFrame(active)},{passive:true});active();
+  var auto=setInterval(function(){go((active()+1)%cards.length)},5000);
+  ["touchstart","mousedown"].forEach(function(ev){slider.addEventListener(ev,function(){clearInterval(auto)},{passive:true})});
+
+  /* Barra fija */
+  var dock=document.getElementById("dock");
+  window.addEventListener("scroll",function(){dock.classList.toggle("show",window.scrollY>380)},{passive:true});
+  document.getElementById("yr").textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
